@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Sapthashwa Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/clinic_logo.jpeg" alt="Sapthashwa Clinic Logo">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-check">
+        <label for="nav-toggle" class="nav-overlay"></label>
+        <label for="nav-toggle" class="menu-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="mobile-only"><a href="appointment.html" class="btn">Book Appointment</a></li>
+        </ul>
+        <a href="appointment.html" class="btn desktop-only">Book Appointment</a>
+    </nav>
+
+    <main class="services-section" style="background: #fff; min-height: 80vh;">
+        <div class="appointment-card" style="max-width: 800px; margin: 0 auto; padding: 3rem; background: var(--bg-color); border-radius: 30px; box-shadow: var(--shadow);">
+            <h1 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">Schedule Your Visit</h1>
+            <p style="text-align: center; margin-bottom: 3rem; color: var(--light-text);">A unit of Sapthashwa healthcare and diagnostics</p>
+
+            <form action="#">
+                <div class="form-row form-row-2">
+                    <div class="form-group">
+                        <label>Select Department</label>
+                        <select required name="department" style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #ddd;">
+                            <option value="ortho">Orthopaedic (Bone & Joint)</option>
+                            <option value="obg">Obstetrics & Gynaecology (OBG)</option>
+                            <option value="diag">Diagnostics/Lab Test</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Doctor (Optional)</label>
+                        <input type="text" placeholder="e.g. Dr. Naveen Kempe Gowda" style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #ddd;">
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 1.5rem;">
+                    <label>Patient Full Name</label>
+                    <input type="text" placeholder="Enter full name" required style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #ddd;">
+                </div>
+
+                <div class="form-row form-row-3">
+                    <div class="form-group">
+                        <label>Patient Age</label>
+                        <input type="number" placeholder="Age" required style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #ddd;">
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #ddd;">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+91" required style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #ddd;">
+                    </div>
+                </div>
+
+                <div class="form-row form-row-2">
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" required style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #ddd;">
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Time Slot</label>
+                        <select style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #ddd;">
+                            <option value="morning">Morning (10:00 - 13:00)</option>
+                            <option value="afternoon">Afternoon (14:00 - 17:00)</option>
+                            <option value="evening">Evening (17:00 - 21:00)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 1.5rem;">
+                    <label>Brief Reason for Visit / Symptoms</label>
+                    <textarea rows="4" placeholder="Mention your concerns here..." style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #ddd; font-family: inherit;"></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%; margin-top: 2.5rem; padding: 1.2rem; font-size: 1.1rem; box-shadow: 0 10px 20px rgba(233, 78, 119, 0.2);">Confirm Booking Request</button>
+            </form>
+            <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--light-text); text-align: center;">Our reception team will call you back to confirm the final slot.</p>
+        </div>
+    </main>
+
+</body>
+</html>

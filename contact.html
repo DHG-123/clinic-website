@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sapthashwa Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/clinic_logo.jpeg" alt="Sapthashwa Clinic Logo">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-check">
+        <label for="nav-toggle" class="nav-overlay"></label>
+        <label for="nav-toggle" class="menu-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li class="mobile-only"><a href="appointment.html" class="btn">Book Appointment</a></li>
+        </ul>
+        <a href="appointment.html" class="btn desktop-only">Book Appointment</a>
+    </nav>
+
+    <div class="about-page">
+        <h1 style="text-align: center; color: var(--primary-color); margin-bottom: 1rem;">Contact Our Team</h1>
+        <p style="text-align: center; margin-bottom: 3rem; color: var(--light-text);">A unit of Sapthashwa healthcare and diagnostics</p>
+        
+        <div class="about-hero contact-grid">
+            <div class="contact-info">
+                <div class="service-card" style="margin-bottom: 1.5rem; cursor: default; padding: 1.5rem;">
+                    <h3><i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i> Our Location</h3>
+                    <p>A unit of Sapthaswa Healthcare & Diagnostics<br>3rd cross, Shankar Mutt Rd,<br>beside Shankar Mutt Road,<br>Hassan, Karnataka 573201</p>
+                </div>
+                <div class="service-card" style="margin-bottom: 1.5rem; cursor: default; padding: 1.5rem;">
+                    <h3><i class="fas fa-phone-alt" style="color: var(--primary-color);"></i> Phone & WhatsApp</h3>
+                    <p>Mobile: <a href="tel:+91 99999 00000" style="color: inherit; text-decoration: none;">+91 99999 00000</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/+9199999 00000" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Message us on WhatsApp</a></p>
+                </div>
+                <div class="service-card" style="cursor: default; padding: 1.5rem;">
+                    <h3><i class="fas fa-clock" style="color: var(--primary-color);"></i> Clinic Timings</h3>
+                    <p>Mon - Sat: 09:30 AM - 09:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <div class="map-container" style="height: 500px; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow);">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.483765991512!2d76.10614609999999!3d13.0048361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba549363ed813c9%3A0xfa19e6522034c7de!2sCYRUS%20-%20The%20Hassan%20Bone%20and%20Joint%20clinic%20-%20Dr%20Naveen%20Kempe%20Gowda!5e0!3m2!1sen!2sin!4v1718788000000" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col" style="text-align: left;">
+                <img src="images/clinic_logo.jpeg" alt="Clinic Logo" style="height: 60px; margin-bottom: 1.5rem;">
+                <p>A unit of Sapthashwa healthcare and diagnostics.</p>
+                <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem;">
+                    <a href="#" style="color: white;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919999900000" style="color: white;"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Navigation</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+                    <li><a href="about.html" style="color: #ccc; text-decoration: none;">About Us</a></li>
+                    <li><a href="services.html" style="color: #ccc; text-decoration: none;">Services</a></li>
+                    <li><a href="contact.html" style="color: #ccc; text-decoration: none;">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Contacts</h4>
+                <p style="color: #ccc;"><i class="fas fa-map-marker-alt" style="margin-right: 0.8rem;"></i> 3rd cross, Shankar Mutt Rd, Hassan</p>
+                <p style="color: #ccc;"><i class="fas fa-phone-alt" style="margin-right: 0.8rem;"></i> +91 99999 00000</p>
+            </div>
+            <div class="footer-col">
+                <h4>Clinic Hours</h4>
+                <p style="color: #ccc;">Mon - Sat: 09:30 AM - 09:00 PM</p>
+                <p style="color: #ccc;">Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sapthashwa Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

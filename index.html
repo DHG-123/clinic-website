@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapthashwa OBG & Orthopaedic Clinic - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/clinic_logo.jpeg" alt="Sapthashwa Clinic Logo">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-check">
+        <label for="nav-toggle" class="nav-overlay"></label>
+        <label for="nav-toggle" class="menu-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="mobile-only"><a href="appointment.html" class="btn">Book Now</a></li>
+        </ul>
+        <a href="appointment.html" class="btn desktop-only">Book Now</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-slider">
+            <img src="images/hero.png" alt="Clinic Interior">
+            <img src="images/ortho.png" alt="Orthopedic Care">
+            <img src="images/obstetrics%20and%20gynacology.png" alt="OBG Consultation">
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1>Expert Healthcare for Orthopaedics & OBG</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 2.5rem; color: #444;">A unit of Sapthashwa healthcare and diagnostics. Dedicated to precision care and patient wellness in Hassan.</p>
+            
+            <div class="hero-btns">
+                <a href="appointment.html" class="btn" style="font-size: 1.1rem; padding: 1rem 2.5rem;">Book Appointment</a>
+                <a href="tel:+91 99999 00000" class="btn" style="background: var(--primary-color); font-size: 1.1rem; padding: 1rem 2.5rem;">
+                    <i class="fas fa-phone-alt" style="margin-right: 0.5rem;"></i> +91 99999 00000
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Preview -->
+    <section class="services-section">
+        <h2 style="font-size: 2.5rem; color: var(--primary-dark);">Our Excellence Areas</h2>
+        <p style="color: var(--light-text); margin-bottom: 3rem;">Trusted specialized care in the heart of Hassan</p>
+        <div class="services-grid">
+            <div class="service-card" onclick="location.href='services.html'">
+                <img src="images/ortho.png" class="service-img" alt="Orthopaedic">
+                <div class="service-content">
+                    <h3>Orthopaedics</h3>
+                    <p>Advanced joint replacements, fracture care, and trauma management.</p>
+                    <div class="service-details">
+                        <p>Led by Dr. Naveen Kempe Gowda, providing state-of-the-art orthopaedic solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" onclick="location.href='services.html'">
+                <img src="images/obstetrics%20and%20gynacology.png" class="service-img" alt="OBG">
+                <div class="service-content">
+                    <h3>Obstetrics & Gynaecology</h3>
+                    <p>Maternity care, women's wellness, and gynecological surgeries.</p>
+                    <div class="service-details">
+                        <p>Comprehensive care for every stage of a woman's life journey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" onclick="location.href='services.html'">
+                <img src="images/diagnostics.jpg" class="service-img" alt="Diagnostics">
+                <div class="service-content">
+                    <h3>Diagnostics</h3>
+                    <p>In-house diagnostics and healthcare tests for accurate results.</p>
+                    <div class="service-details">
+                        <p>Qualified lab services integrated within the clinic premises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Widget (Pure CSS) -->
+    <div class="chatbot-container">
+        <input type="checkbox" id="chat-toggle-check">
+        <label for="chat-toggle-check" class="chat-label">
+            <i class="fas fa-comment-dots"></i>
+        </label>
+        
+        <div class="chat-window">
+            <div class="chat-header">
+                <span>Clinic Assistant</span>
+                <label for="chat-toggle-check"><i class="fas fa-times" style="cursor: pointer;"></i></label>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot-msg">Hello! Welcome to Sapthashwa Clinic. How can I help you today?</div>
+                <div class="message bot-msg">I can answer doubts about:
+                    <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                        <li>Clinic Timings</li>
+                        <li>Available Doctors</li>
+                        <li>Booking Process</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chat-input" style="background: #f9f9f9;">
+                <p style="font-size: 0.8rem; color: #999;">Design Mockup: Functional chat requires JavaScript.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col" style="text-align: left;">
+                <img src="images/clinic_logo.jpeg" alt="Clinic Logo" style="height: 60px; margin-bottom: 1.5rem;">
+                <p>A unit of Sapthashwa healthcare and diagnostics.</p>
+                <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem;">
+                    <a href="#" style="color: white;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919999900000" style="color: white;"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Navigation</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+                    <li><a href="about.html" style="color: #ccc; text-decoration: none;">About Us</a></li>
+                    <li><a href="services.html" style="color: #ccc; text-decoration: none;">Services</a></li>
+                    <li><a href="contact.html" style="color: #ccc; text-decoration: none;">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Contacts</h4>
+                <p style="color: #ccc;"><i class="fas fa-map-marker-alt" style="margin-right: 0.8rem;"></i> 3rd cross, Shankar Mutt Rd, Hassan</p>
+                <p style="color: #ccc;"><i class="fas fa-phone-alt" style="margin-right: 0.8rem;"></i> +91 99999 00000</p>
+            </div>
+            <div class="footer-col">
+                <h4>Clinic Hours</h4>
+                <p style="color: #ccc;">Mon - Sat: 09:30 AM - 09:00 PM</p>
+                <p style="color: #ccc;">Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sapthashwa Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
